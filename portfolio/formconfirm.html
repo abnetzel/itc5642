@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form</title>
+<style type="text/css">
+#header {
+	position: absolute;
+	width: 700px;
+	height: 100px;
+	z-index: 1;
+	left: 8px;
+	visibility: visible;
+	top: 8px;
+}
+#content {
+	position: absolute;
+	width: 700px;
+	height: 750;
+	z-index: 2;
+	top: 135px;
+	left: 10px;
+	visibility: visible;
+	text-align: left;
+}
+</style>
+<link href="styles/css_styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_jumpMenuGo(objId,targ,restore){ //v9.0
+  var selObj = null;  with (document) { 
+  if (getElementById) selObj = getElementById(objId);
+  if (selObj) eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0; }
+}
+</script>
+</head>
+
+<body>
+<div class="masterdivstyle" id="header">
+  <h1>Thank you!</h1>
+</div>
+<div class="masterdivstyle" id="content">
+  <div align="center"><img src="images/customerserv.jpg" alt="Female customer service representative asking how can I help you?" width="250" height="187" class="masterdivstyle" />
+  </div>
+  <table width="101%" border="0">
+    <tr>
+      <td><p><strong>Thank you for your submission! </strong></p>
+      <p>We will be in contact within 48 hours. In the meantime, please make a selection from the options below.</p></td>
+    </tr>
+  </table>
+  <p></p>
+  <form id="form1" name="form1" method="post" action="http://www.ipage.com/scripts/formemail.bml">
+    <select name="jumpMenu" id="jumpMenu">
+      <option>--Select One--</option>
+      <option value="index.html">Home Page</option>
+      <option value="imagemaps.html">Map</option>
+    </select>
+    <input type="button" name="go_button" id= "go_button" value="Go" onclick="MM_jumpMenuGo('jumpMenu','parent',0)" />
+  </form>
+</div>
+</body>
+</html>

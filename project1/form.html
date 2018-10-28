@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 1024;
+	height: 300;
+	z-index: 1;
+}
+#apDiv2 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+}
+.welcome {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.images {
+	border: 2px solid #FFF;
+}
+.paragraph {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-align: left;
+	font-weight: normal;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+</script>
+</head>
+
+<body>
+<table width="65%">
+  <tr>
+    <td><div align="center" class="images"><img src="images/banner.png" width="1024" height="300" alt="Chris's Canine Care Banner, contains image of Chris" /></div></td>
+  </tr>
+</table>
+<table width="65%" border="0">
+  <tr>
+    <td width="1024"><div align="center">
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="#about">About Chris</a> </li>
+        <li><a href="services.html">Services &amp; <br />
+          Price List</a></li>
+        <li><a href="area.html">Areas Served</a> </li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact Chris</a></li>
+        <li><a href="form.html">Interest Form</a></li>
+      </ul>
+    </div></td>
+  </tr>
+  <tr>
+    <td width="65"><div align="center">
+      <h2 align="left" class="welcome"><span class="paragraph">Please take a moment to fill out the interest form below.</span><br />
+        <br />
+         <form id="form1" name="form1" method="post" action="http://www.ipage.com/scripts/formemail.bml">
+  <input type="hidden" name="my_email" value="netzelab@appstate.edu">
+  <input type="hidden" name="thankyou_url" value="http://www.elearningaccessibilitysolutions.com/itc5642/project1/formsuccessful.html">
+    <p><span class="paragraph">Name:</span>
+      <input name="name" type="text" id="name" size="70" maxlength="75" />
+    </p>
+    <p><span class="paragraph">Email address:</span>
+      <input name="emailAddress" type="text" id="emailAddress" size="60" />
+    </p>
+    <p><span class="paragraph">Number of dogs 
+      </span><br />
+      <select name="numberDogs" id="numberDogs">
+        <option>--Select One--</option>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>more than 5</option>
+</select>
+    </p>
+    <p class="paragraph">I need canine service (select all that apply):    </p>
+    <p>
+      <span class="paragraph">
+      <label>
+        <input type="checkbox" name="Housesitting Services" value="immediately" id="HousesittingServices_0" />
+        immediately</label>
+      <br />
+      <label>
+        <input type="checkbox" name="Housesitting Services" value="1-2 weeks" id="HousesittingServices_1" />
+        within 1-2 weeks</label>
+      <br />
+      <label>
+        <input type="checkbox" name="Housesitting Services" value="next month" id="HousesittingServices_2" />
+        next month</label>
+      <br />
+      <label>
+        <input type="checkbox" name="Housesitting Services" value="2-3 months" id="HousesittingServices_3" />
+        2-3 months from now</label>
+      <br />
+      <label>
+        <input type="checkbox" name="Housesitting Services" value="4 or more months from now" id="HousesittingServices_4" />
+        4 or more months</label>
+      from now</span><br />
+    </p>
+    <p class="paragraph">I need canine service (select all that apply): </p>
+    <p> <span class="paragraph">
+      <label>
+        <input type="checkbox" name="HousesittingServices_" value="immediately" id="HousesittingServices_5" />
+        Everyday</label>
+      <br />
+      <label>
+        <input type="checkbox" name="HousesittingServices_" value="1-2 weeks" id="HousesittingServices_6" />
+        Monday - Friday</label>
+      <br />
+      <label>
+        <input type="checkbox" name="HousesittingServices_" value="next month" id="HousesittingServices_7" />
+        Saturday - Sunday</label>
+      <br />
+      <label>
+        <input type="checkbox" name="HousesittingServices_" value="2-3 months" id="HousesittingServices_8" />
+        Morning</label>
+      <br />
+      <label>
+        <input type="checkbox" name="HousesittingServices_" value="4 or more months from now" id="HousesittingServices_9" />
+        Noon<br />
+        <input type="checkbox" name="HousesittingServices_2" value="4 or more months from now" id="HousesittingServices_10" />
+Afternoon<br />
+<input type="checkbox" name="HousesittingServices_3" value="4 or more months from now" id="HousesittingServices_11" />
+Evening      </label>
+    </span></p>
+    <h2 class="paragraph">Additional information:</h2>
+    <p>
+      <textarea name="additionalInfo" id="additionalInfo" cols="75" rows="5">Please tell us about any special circumstances you feel Chris's Canine Service should be aware of. </textarea>
+    </p>
+    <p>
+      <input type="submit" name="button_submit" id="button" value="Submit" />
+      <input type="reset" name="button_reset" id="button_reset" value="Reset" />
+    </p>
+  </form>
+        <br />
+      </h2>
+    </div></td>
+  </tr>
+  <tr>
+    <td><h2 align="center"><span class="paragraph"><a href="index.html"><img src="images/home.png" alt="Link to homepage" width="78" height="100" class="images" /></a></span></h2></td>
+  </tr>
+</table>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

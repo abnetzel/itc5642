@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form</title>
+<style type="text/css">
+#header {
+	position: absolute;
+	width: 700px;
+	height: 100px;
+	z-index: 1;
+	left: 8px;
+	visibility: visible;
+	top: 8px;
+}
+#content {
+	position: absolute;
+	width: 700px;
+	height: 750;
+	z-index: 2;
+	top: 135px;
+	left: 10px;
+	visibility: visible;
+	text-align: left;
+}
+</style>
+<link href="styles/css_styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="masterdivstyle" id="header">
+  <h1>New Housesitting Client Inquiry</h1>
+</div>
+<div class="masterdivstyle" id="content">
+  <div align="center"><img src="images/customerserv.jpg" alt="Female customer service representative asking how can I help you?" width="250" height="187" class="masterdivstyle" />
+  </div>
+  <table width="101%" border="0">
+    <tr>
+      <td>We'd like to learn a little more about you! Please complete the following form and then click the Submit button. We'll reach out to see how we can be of service!</td>
+    </tr>
+  </table>
+  <p></p>
+  <form id="form1" name="form1" method="post" action="http://www.ipage.com/scripts/formemail.bml">
+  <input type="hidden" name="my_email" value="netzelab@appstate.edu">
+  <input type="hidden" name="thankyou_url" value="http://www.elearningaccessibilitysolutions.com/portfolio/formconfirm.html">
+    <p>Name: 
+      <input name="name" type="text" id="name" size="70" maxlength="75" />
+    </p>
+    <p>Email address: 
+      <input name="emailAddress" type="text" id="emailAddress" size="60" />
+    </p>
+    <p>Number of pets 
+      <br />
+      <select name="numberDogs" id="numberDogs">
+        <option>--Select One--</option>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>more than 5</option>
+</select>
+    </p>
+    <p>I need housesitting service (select all that apply):    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="Housesitting Services" value="immediately" id="HousesittingServices_0" />
+      immediately</label>
+      <br />
+      <label>
+        <input type="checkbox" name="Housesitting Services" value="1-2 weeks" id="HousesittingServices_1" />
+        within 1-2 weeks</label>
+      <br />
+      <label>
+        <input type="checkbox" name="Housesitting Services" value="next month" id="HousesittingServices_2" />
+        next month</label>
+      <br />
+      <label>
+        <input type="checkbox" name="Housesitting Services" value="2-3 months" id="HousesittingServices_3" />
+        2-3 months from now</label>
+      <br />
+      <label>
+        <input type="checkbox" name="Housesitting Services" value="4 or more months from now" id="HousesittingServices_4" />
+        4 or more months</label>
+      from now<br />
+    </p>
+    <h2>Additional information:</h2>
+    <p>
+      <textarea name="additionalInfo" id="additionalInfo" cols="75" rows="5">Please tell us what you would like for a housesitter to take care of while you are away (i.e., watering the plants, bringing in the mail, feeding  pets, etc.) </textarea>
+    </p>
+    <p>
+      <input type="submit" name="button_submit" id="button" value="Submit" />
+      <input type="reset" name="button_reset" id="button_reset" value="Reset" />
+    </p>
+  </form>
+  <p><a href="../index.html">Back to Home</a></p>
+</div>
+</body>
+</html>

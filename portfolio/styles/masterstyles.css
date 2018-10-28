@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.secondaryheading {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: large;
+	font-style: italic;
+	color: #09F;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	color: #960;
+}
